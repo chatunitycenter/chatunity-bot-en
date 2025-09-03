@@ -23,6 +23,6 @@ https://docs.google.com/document/d/e/2PACX-1vSgfwbRZrQM2W-3tctvqX7_0eAF-FvU3K_SK
 
 handler.help = ['guida'];
 handler.tags = ['info'];
-handler.command = /^(guida)$/i;
+handler.command = /^(guide)$/i;
 
 export default handler;

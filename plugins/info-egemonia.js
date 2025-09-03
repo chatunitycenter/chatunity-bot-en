@@ -68,6 +68,6 @@ From version 5.0, plugins created by these developers are already included!
 
 handler.help = ['egemonia'];
 handler.tags = ['info'];
-handler.command = /^egemonia(?:\s(\S+))?$/i;
+handler.command = /^hegemony(?:\s(\S+))?$/i;
 
 export default handler;
