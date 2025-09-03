@@ -9,23 +9,23 @@ const __dirname = path.dirname(__filename);
 
 const handler = async (message, { conn, usedPrefix, command }) => {
     const userCount = Object.keys(global.db.data.users).length;
-    const botName = global.db.data.nomedelbot || 'ChatUnity';
+    const botName = global.db.data.botname || 'ChatUnity';
 
     const menuText = generateMenuText(usedPrefix, botName, userCount);
 
-    const imagePath = path.join(__dirname, '../menu/principale.jpeg'); 
+    const imagePath = path.join(__dirname, '../menu/main.jpeg'); 
     await conn.sendMessage(
         message.chat,
         {
             image: { url: imagePath },
             caption: menuText,
-            footer: 'Scegli un menu:',
+            footer: 'Choose a menu:',
             buttons: [
-                { buttonId: `${usedPrefix}menuadmin`, buttonText: { displayText: "🛡️ Menu Admin" }, type: 1 },
-                { buttonId: `${usedPrefix}menuowner`, buttonText: { displayText: "👑 Menu Owner" }, type: 1 },
-                { buttonId: `${usedPrefix}menusicurezza`, buttonText: { displayText: "🚨 Menu Sicurezza" }, type: 1 },
-                { buttonId: `${usedPrefix}menugruppo`, buttonText: { displayText: "👥 Menu Gruppo" }, type: 1 },
-                { buttonId: `${usedPrefix}menuia`, buttonText: { displayText: "🤖 Menu IA" }, type: 1 }
+                { buttonId: `${usedPrefix}adminmenu`, buttonText: { displayText: "🛡️ Admin Menu" }, type: 1 },
+                { buttonId: `${usedPrefix}ownermenu`, buttonText: { displayText: "👑 Owner Menu" }, type: 1 },
+                { buttonId: `${usedPrefix}securitymenu`, buttonText: { displayText: "🚨 Security Menu" }, type: 1 },
+                { buttonId: `${usedPrefix}groupmenu`, buttonText: { displayText: "👥 Group Menu" }, type: 1 },
+                { buttonId: `${usedPrefix}aimenu`, buttonText: { displayText: "🤖 AI Menu" }, type: 1 }
             ],
             viewOnce: true,
             headerType: 4
@@ -35,32 +35,32 @@ const handler = async (message, { conn, usedPrefix, command }) => {
 
 handler.help = ['menu'];
 handler.tags = ['menu'];
-handler.command = /^(menu|comandi)$/i;
+handler.command = /^(menu|commands)$/i;
 
 export default handler;
 
 function generateMenuText(prefix, botName, userCount) {
     return `
 
-╭〔 *💬 𝑴𝑬𝑵𝑼 𝑫𝑬𝑳 𝑩𝑶𝑻 💬* 〕┈⊷
+╭〔 *💬 BOT MENU 💬* 〕┈⊷
 ┃◈╭───────────·๏
 ┃◈┃• 👑 *${prefix}staff*
-┃◈┃• 👑 *${prefix}egemonia*
-┃◈┃• 📜 *${prefix}candidati*
-┃◈┃• 📥 *${prefix}installa*
-┃◈┃• 📖 *${prefix}guida*
-┃◈┃• 📝 *${prefix}canali* 
-┃◈┃• ⚙ *${prefix}sistema*
+┃◈┃• 👑 *${prefix}hegemony*
+┃◈┃• 📜 *${prefix}apply*
+┃◈┃• 📥 *${prefix}install*
+┃◈┃• 📖 *${prefix}guide*
+┃◈┃• 📝 *${prefix}channels* 
+┃◈┃• ⚙ *${prefix}system*
 ┃◈┃• ❓ *${prefix}FAQ*
 ┃◈┃• 🚀 *${prefix}ping*
-┃◈┃• 📝 *${prefix}segnala* (comando)
-┃◈┃• 💡 *${prefix}consiglia* (comando)
-┃◈┃• 🆕 *${prefix}novità* (aggiornamenti)
+┃◈┃• 📝 *${prefix}report* (command)
+┃◈┃• 💡 *${prefix}suggest* (command)
+┃◈┃• 🆕 *${prefix}news* (updates)
 ┃◈┃
 ┃◈└───────────┈⊷
-┃◈┃• *𝑽𝑬𝑹𝑺𝑰𝑶𝑵𝑬:* ${vs}
-┃◈┃•  𝐂𝐎𝐋𝐋𝐀𝐁: 𝐎𝐍𝐄 𝐏𝐈𝐄𝐂𝐄
-┃◈┃•  𝐔𝐓𝐄𝐍𝐓𝐈: ${userCount}
+┃◈┃• *VERSION:* ${vs}
+┃◈┃•  COLLAB: ONE PIECE
+┃◈┃•  USERS: ${userCount}
 ╰━━━━━━━━━━━━━┈·๏
 `.trim();
 }

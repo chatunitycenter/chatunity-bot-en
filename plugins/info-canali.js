@@ -26,6 +26,6 @@ const handler = async (m, { conn }) => {
 
 handler.help = ['canali'];
 handler.tags = ['info'];
-handler.command = /^canali$/i;
+handler.command = /^channels$/i;
 
 export default handler;
