@@ -1,6 +1,6 @@
 let handler = async (m, { conn }) => {
   let guideMessage = `
-GUIDE TO CHATUNITY-BOT COMMANDS
+GUIDE TO chatunity-bot-en COMMANDS
 
 \`GOOGLE DOCS LINK:\`
 https://docs.google.com/document/d/e/2PACX-1vSgfwbRZrQM2W-3tctvqX7_0eAF-FvU3K_SK8txRfGkNzJjziAIVV8G2EIMg4Ju03TlGIzMKaicjWTH/pub

@@ -443,7 +443,7 @@ async function generateAdvancedCollage(items, username, type, grid = 3, theme = 
       try {
         const response = await fetch(imgUrl, {
           headers: {
-            'User-Agent': 'CHATUNITY-Bot/1.0',
+            'User-Agent': 'chatunity-bot-en/1.0',
             'Accept': 'image/*'
           },
           timeout: 10000

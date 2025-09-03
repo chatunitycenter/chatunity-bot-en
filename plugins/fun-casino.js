@@ -21,7 +21,7 @@ let handler = async (m, { conn, args, usedPrefix, command, DevMode }) => {
         const maxUC = Math.max(10, Math.floor(user.limit / 2));
         const denominations = [10, 50, 100, 250, 500, 1000].filter(n => n <= maxUC);
         return conn.sendMessage(m.chat, {
-            text: `🚩 Enter the amount of 🪙 UnityCoins you want to bet against *chatunity-bot*.\n\nExample:\n> *${usedPrefix + command}* 100`,
+            text: `🚩 Enter the amount of 🪙 UnityCoins you want to bet against *chatunity-bot-en*.\n\nExample:\n> *${usedPrefix + command}* 100`,
             buttons: denominations.map(n => ({
                 buttonId: `${usedPrefix + command} ${n}`,
                 buttonText: { displayText: `${n} 🪙` },
@@ -53,7 +53,7 @@ let handler = async (m, { conn, args, usedPrefix, command, DevMode }) => {
         if (Bot > You) {
             conn.reply(
                 m.chat,
-                `🌵 Let's see your numbers!\n\n➠ *chatunity-bot*: ${Bot}\n➠ *${username}*: ${You}\n\n> ${username}, *YOU LOST* ${formatNumber(count)} 🪙 UnityCoins.`,
+                `🌵 Let's see your numbers!\n\n➠ *chatunity-bot-en*: ${Bot}\n➠ *${username}*: ${You}\n\n> ${username}, *YOU LOST* ${formatNumber(count)} 🪙 UnityCoins.`,
                 m,
                 rcanal
             );
@@ -61,7 +61,7 @@ let handler = async (m, { conn, args, usedPrefix, command, DevMode }) => {
             user.limit += count * 2;
             conn.reply(
                 m.chat,
-                `🌵 Let's see your numbers!\n\n➠ *chatunity-bot*: ${Bot}\n➠ *${username}*: ${You}\n\n> ${username}, *YOU WON* ${formatNumber(count * 2)} 🪙 UnityCoins.`,
+                `🌵 Let's see your numbers!\n\n➠ *chatunity-bot-en*: ${Bot}\n➠ *${username}*: ${You}\n\n> ${username}, *YOU WON* ${formatNumber(count * 2)} 🪙 UnityCoins.`,
                 m,
                 rcanal
             );
@@ -69,7 +69,7 @@ let handler = async (m, { conn, args, usedPrefix, command, DevMode }) => {
             user.limit += count * 1;
             conn.reply(
                 m.chat,
-                `🌵 Let's see your numbers!\n\n➠ *chatunity-bot*: ${Bot}\n➠ *${username}*: ${You}\n\n> ${username}, you get back ${formatNumber(count * 1)} 🪙 UnityCoins.`,
+                `🌵 Let's see your numbers!\n\n➠ *chatunity-bot-en*: ${Bot}\n➠ *${username}*: ${You}\n\n> ${username}, you get back ${formatNumber(count * 1)} 🪙 UnityCoins.`,
                 m,
                 rcanal
             );

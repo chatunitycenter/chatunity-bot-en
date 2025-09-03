@@ -29,11 +29,11 @@ let handler = async (m, { conn, usedPrefix }) => {
     }, 
     "message": { 
       "orderMessage": { 
-        text: 'DOWNLOAD CHATUNITY-BOT 💬',
+        text: 'DOWNLOAD chatunity-bot-en 💬',
         itemCount: 2023,
         status: 1,
         surface: 1,
-        message: 'DOWNLOAD CHATUNITY-BOT 💬',
+        message: 'DOWNLOAD chatunity-bot-en 💬',
         "vcard": `BEGIN:VCARD\nVERSION:5.0\nN;Unlimited;;;\nFN:Unlimited\nORG:Unlimited\nTITLE:\nitem1.TEL;waid=15395490858:+1 (539) 549-0858\nitem1.X-ABLabel:Unlimited\nX-WA-BIZ-DESCRIPTION:ofc\nX-WA-BIZ-NAME:Unlimited\nEND:VCARD`
       }
     }, 
@@ -43,11 +43,11 @@ let handler = async (m, { conn, usedPrefix }) => {
   let info = `
 『💬』 ══ •⊰✰⊱• ══ 『💬』
 
-DOWNLOAD CHATUNITY-BOT
+DOWNLOAD chatunity-bot-en
 
 Follow these steps to properly install ChatUnity Bot on Termux
 
-Termux repository: https://github.com/chatunitycenter/chatunity-bot
+Termux repository: https://github.com/chatunitycenter/chatunity-bot-en
 
 YT tutorial video: https://youtube.com/shorts/qek7wWadhtI?si=MrrA3bLWWAsLmpw6
 
@@ -79,7 +79,7 @@ Grant permissions when prompted.
 
 Run the following command to update Termux:
 
-apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://raw.githubusercontent.com/chatunitycenter/chatunity-bot/main/chatunity.sh | bash
+apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://raw.githubusercontent.com/chatunitycenter/chatunity-bot-en/main/chatunity.sh | bash
 
 『💬』 ══ •⊰✰⊱• ══ 『💬』
 
@@ -102,7 +102,7 @@ If you encounter problems, make sure all steps were followed correctly and check
         body: 'ChatUnity',         
         previewType: 0, 
         thumbnail: fs.readFileSync("./menu/Menu2.jpg"),
-        sourceUrl: `https://github.com/chatunitycenter/chatunity-bot`
+        sourceUrl: `https://github.com/chatunitycenter/chatunity-bot-en`
       }
     }
   })

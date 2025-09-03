@@ -5,7 +5,7 @@ const handler = async (m, { conn }) => {
 ┃✨ *ChatUnity* 
 ┃🔗 https://whatsapp.com/channel/0029VaZVlJZHwXb8naJBQN0J
 ┃
-┃🤖 *ChatUnity-Bot*
+┃🤖 *chatunity-bot-en*
 ┃🔗 https://whatsapp.com/channel/0029Vb32UwhA89MZtd6WRS3G
 ┃
 ┃🌍 *ChatUnity Server*

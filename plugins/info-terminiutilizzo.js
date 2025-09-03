@@ -75,7 +75,7 @@ function generateMenuText(prefix, botName, userCount) {
 ┣━━━〔 📌 *CONDIZIONI DI USO* 〕━━━┫
 ┃ • NON chiamare o effettuare videochiamate al Bot da numeri ufficiali, poiché ciò ostacola il funzionamento del Bot.
 ┃ • NON
-_- Gli account ufficiali di chatunity-bot non sono responsabili dell'uso che fai della funzione "Sub Bot"._
+_- Gli account ufficiali di chatunity-bot-en non sono responsabili dell'uso che fai della funzione "Sub Bot"._
 
 *CONDIZIONI DI USO*
 _- NON chiamare o effettuare videochiamate al Bot da numeri ufficiali, poiché ciò ostacola il funzionamento del Bot._
@@ -84,16 +84,16 @@ _- NON utilizzare il Bot da numeri ufficiali per compiere azioni ostili che potr
 
 _- NON utilizzare ripetutamente il comando SPAM, poiché potrebbe causare un malfunzionamento del Bot. Inoltre, non inviare al Bot messaggi che potrebbero comprometterne il funzionamento._
 
-_- Quando utilizzi determinati comandi che hanno l'obiettivo di causare disagio, inquietudine, fastidio o altri termini simili, verranno applicate le rispettive sanzioni o avvisi per preservare l'integrità degli utenti e il funzionamento di chatunity-bot._
+_- Quando utilizzi determinati comandi che hanno l'obiettivo di causare disagio, inquietudine, fastidio o altri termini simili, verranno applicate le rispettive sanzioni o avvisi per preservare l'integrità degli utenti e il funzionamento di chatunity-bot-en._
 
 *QUESTO È IL REPOSITORIO UFFICIALE*
-https://github.com/chatunitycenter/chatunity-bot
+https://github.com/chatunitycenter/chatunity-bot-en
 
 
 *DONA ALLA CREATRICE SU QUESTO ACCOUNT UFFICIALE*
 ~ _Se apprezzi e valorizzi il lavoro che ho svolto, puoi aiutarmi con una donazione per continuare questo progetto._
 *https://paypal.me/chatunity*
 
-*~ Grazie per aver dedicato del tempo a informarti su chatunity-bot*
+*~ Grazie per aver dedicato del tempo a informarti su chatunity-bot-en*
 `.trim();
 }

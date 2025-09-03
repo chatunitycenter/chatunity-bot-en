@@ -38,7 +38,7 @@ const handler = async (m, { conn, args, usedPrefix }) => {
 ┃◈ • Onix-Bot
 ┃◈ • VareBot
 
-Together to make ChatUnity-Bot globally competitive, helping with plugin creation and fixes.
+Together to make chatunity-bot-en globally competitive, helping with plugin creation and fixes.
 From version 5.0, plugins created by these developers are already included!
 ╰━━━━━━━━━━━━━━⊷
 

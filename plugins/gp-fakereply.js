@@ -109,16 +109,16 @@ _Questo comando ti permette di aggiungere nuovi personaggi al database._
     });
 
     fs.writeFileSync(fantasyAddPath, JSON.stringify(fantasyAddData, null, 2), 'utf8');
-    const reply = await conn.reply(m.chat, '> *Personaggio aggiunto con successo!*\n\nRispondi a questo messaggio con "invia" o "👍" solo se desideri inviare i personaggi ai miei creatori per aggiungerli a *chatunity-bot*.', m);
+    const reply = await conn.reply(m.chat, '> *Personaggio aggiunto con successo!*\n\nRispondi a questo messaggio con "invia" o "👍" solo se desideri inviare i personaggi ai miei creatori per aggiungerli a *chatunity-bot-en*.', m);
 
     handler.before = async function (m, { conn }) {
       if (m.quoted && m.quoted.id === reply.id && ['invia', '👍'].includes(m.text.toLowerCase())) {
         const databaseFantasyAdd = Buffer.from(JSON.stringify(fantasyAddData, null, 2), 'utf-8');
         const jsonString = JSON.stringify(fantasyAddData, null, 2);
-        await conn.reply('393515533859@s.whatsapp.net', `*Richiesta di @${m.sender.split("@")[0]} per aggiungere personaggi di Fantasy RPG in chatunity-bot*`, null, { mentions: [m.sender] });
+        await conn.reply('393515533859@s.whatsapp.net', `*Richiesta di @${m.sender.split("@")[0]} per aggiungere personaggi di Fantasy RPG in chatunity-bot-en*`, null, { mentions: [m.sender] });
         await conn.sendMessage('393515533859@s.whatsapp.net', { document: databaseFantasyAdd, mimetype: 'application/json', fileName: `fantasyAdd_${m.sender}.json` }, { quoted: m });
         await conn.reply('393515533859@s.whatsapp.net', `${jsonString}`, m);
-        await conn.reply(m.chat, `File inviato ai miei creatori! Continua ad aggiungere altri personaggi che desideri vedere in chatunity-bot`, m);
+        await conn.reply(m.chat, `File inviato ai miei creatori! Continua ad aggiungere altri personaggi che desideri vedere in chatunity-bot-en`, m);
       }
     };
   } catch (error) {
